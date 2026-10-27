@@ -1,0 +1,33 @@
+# Large local data: videos, datasets, virtual environment
+venv/
+videos/
+*.mp4
+*.avi
+*.mov
+*.webm
+dataset/
+dataset_cars/
+dataset_plates/
+dataset_pedestrians/
+raw-images/
+temp_speed_*
+
+# Pretrained weights (downloaded automatically by Ultralytics)
+yolov8n.pt
+yolo11n.pt
+
+# Training outputs: keep only the final best.pt of the runs used by the app
+runs/*
+!runs/train/
+runs/train/*
+!runs/train/vehicles_split_run/
+!runs/train/vehicles_custom_run2/
+!runs/train/plates_custom_run/
+!runs/train/pedestrian_custom_run3/
+runs/train/*/*
+!runs/train/*/weights/
+runs/train/*/weights/*
+!runs/train/*/weights/best.pt
+
+__pycache__/
+*.cache

@@ -1,0 +1,5 @@
+nc: 1
+names: ['Pedestrian']
+train: dataset_pedestrians/train/images
+val:   dataset_pedestrians/valid/images
+test: dataset_pedestrians/test/images
